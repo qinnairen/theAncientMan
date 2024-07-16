@@ -1,0 +1,145 @@
+/* Global Styles */
+body {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f1e8;
+    background-image: url('/api/placeholder/800/800');
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+header {
+    background-color: #FF5733;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+.blog-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.blog-preview {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.blog-preview-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-preview-content {
+    padding: 20px;
+}
+
+.blog-preview h2 {
+    margin-top: 0;
+}
+
+.blog-preview a {
+    color: #FF5733;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.blog-preview a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.blog-meta {
+    font-style: italic;
+    color: #666;
+}
+
+/* Blog Post Styles */
+.blog-post {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #FF5733;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
